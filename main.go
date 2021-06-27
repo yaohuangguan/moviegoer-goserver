@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/gin-gonic/gin"
@@ -21,4 +22,6 @@ func main() {
 	}
 
 	router.Run(":" + string(ENV_PORT)) // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+
+	fmt.Println("server running on port", ENV_PORT)
 }
