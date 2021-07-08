@@ -8,4 +8,4 @@ RUN go install -v ./...
 ENV PORT 8080
 EXPOSE $PORT
 
-CMD ["go","run","main.go"]
+CMD ["go","run","*.go"]
